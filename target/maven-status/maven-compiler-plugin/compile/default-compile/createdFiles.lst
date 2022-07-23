@@ -1,0 +1,7 @@
+com\ecom\pages\LandingPage.class
+com\ecom\pages\LoginPage.class
+com\ecom\utils\WaitForHelper.class
+com\ecom\base\BasePage.class
+com\ecom\utils\PropertyReader.class
+com\ecom\utils\DriverManager.class
+com\ecom\utils\Log.class
