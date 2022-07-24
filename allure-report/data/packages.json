@@ -1,1 +1,1 @@
-{"uid":"83edc06c07f9ae9e47eb6dd1b683e4e2","name":"packages","children":[{"name":"com.ecom.tests.TestLogin","children":[{"name":"Test1","uid":"c9773b013caf3d21","parentUid":"2cb3dbee7421361a28ef1f808752a480","status":"passed","time":{"start":1658603429498,"stop":1658603429522,"duration":24},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":1,"retriesStatusChange":false,"parameters":[]}],"uid":"com.ecom.tests.TestLogin"}]}
+{"uid":"83edc06c07f9ae9e47eb6dd1b683e4e2","name":"packages","children":[]}

@@ -1,7 +1,7 @@
-G:\SQA Course Work\EComAutomate\src\main\java\com\ecom\utils\PropertyReader.java
-G:\SQA Course Work\EComAutomate\src\main\java\com\ecom\pages\LandingPage.java
-G:\SQA Course Work\EComAutomate\src\main\java\com\ecom\utils\WaitForHelper.java
-G:\SQA Course Work\EComAutomate\src\main\java\com\ecom\utils\DriverManager.java
-G:\SQA Course Work\EComAutomate\src\main\java\com\ecom\pages\LoginPage.java
-G:\SQA Course Work\EComAutomate\src\main\java\com\ecom\utils\Log.java
-G:\SQA Course Work\EComAutomate\src\main\java\com\ecom\base\BasePage.java
+D:\Eclipse-Workspace\EComAutomate\src\main\java\com\ecom\pages\LandingPage.java
+D:\Eclipse-Workspace\EComAutomate\src\main\java\com\ecom\utils\WaitForHelper.java
+D:\Eclipse-Workspace\EComAutomate\src\main\java\com\ecom\base\BasePage.java
+D:\Eclipse-Workspace\EComAutomate\src\main\java\com\ecom\utils\PropertyReader.java
+D:\Eclipse-Workspace\EComAutomate\src\main\java\com\ecom\utils\Log.java
+D:\Eclipse-Workspace\EComAutomate\src\main\java\com\ecom\pages\LoginPage.java
+D:\Eclipse-Workspace\EComAutomate\src\main\java\com\ecom\utils\DriverManager.java

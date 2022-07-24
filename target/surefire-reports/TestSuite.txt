@@ -1,30 +1,30 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 14.586 s <<< FAILURE! - in TestSuite
-loginToBM(com.ecom.tests.TestLogin)  Time elapsed: 4.062 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <button type="submit" class="btn btn-warning">...</button> is not clickable at point (1191, 654). Other element would receive the click: <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">...</div>
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 21.767 s <<< FAILURE! - in TestSuite
+loginToBM(com.ecom.tests.TestLogin)  Time elapsed: 4.466 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
   (Session info: chrome=103.0.5060.134)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-PK5Q720', ip: '192.168.31.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-1D14QE1', ip: '172.20.0.88', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e0c629f0e0177a57b6a0cf7f1614b292, clickElement {id=9baaedae-937b-43dd-8aa5-3086023414a4}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Farabi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53679}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53679/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (e0c629f0e0177a57b6a0cf7f1614b292)] -> css selector: button[type='submit']]
-Session ID: e0c629f0e0177a57b6a0cf7f1614b292
+Command: [63b5c62ccda6fbf228e510245cc0cf1d, clearElement {id=c7896465-9ec6-4693-9efe-6a75d56427c2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55095/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (63b5c62ccda6fbf228e510245cc0cf1d)] -> id: email]
+Session ID: 63b5c62ccda6fbf228e510245cc0cf1d
 	at com.ecom.tests.TestLogin.loginToBM(TestLogin.java:21)
 
-verifyLoggedInUser(com.ecom.tests.TestLogin)  Time elapsed: 3.569 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <button type="submit" class="btn btn-warning">...</button> is not clickable at point (1191, 654). Other element would receive the click: <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">...</div>
+verifyLoggedInUser(com.ecom.tests.TestLogin)  Time elapsed: 3.597 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
   (Session info: chrome=103.0.5060.134)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-PK5Q720', ip: '192.168.31.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-1D14QE1', ip: '172.20.0.88', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9d8319db784c76191cd8ba1354b0ff6d, clickElement {id=eac60440-e87d-4b6b-a42a-f5e705b3310b}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Farabi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53731}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53731/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (9d8319db784c76191cd8ba1354b0ff6d)] -> css selector: button[type='submit']]
-Session ID: 9d8319db784c76191cd8ba1354b0ff6d
+Command: [2ab60758807aa1f791b5a5ac12d8616a, clearElement {id=d785ff14-b59c-4e92-82c8-d27ab736c3ed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55180}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55180/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (2ab60758807aa1f791b5a5ac12d8616a)] -> id: email]
+Session ID: 2ab60758807aa1f791b5a5ac12d8616a
 	at com.ecom.tests.TestLogin.verifyLoggedInUser(TestLogin.java:31)
 

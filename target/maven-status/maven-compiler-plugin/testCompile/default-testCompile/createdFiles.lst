@@ -1,2 +1,3 @@
 com\ecom\base\TestBase.class
+com\ecom\tests\TestSelectLocation.class
 com\ecom\tests\TestLogin.class
