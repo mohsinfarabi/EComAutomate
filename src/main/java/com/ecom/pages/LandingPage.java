@@ -2,8 +2,9 @@ package com.ecom.pages;
 
 import com.ecom.base.BasePage;
 import com.ecom.utils.PropertyReader;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 public class LandingPage extends BasePage {
     WebDriver driver;
@@ -14,10 +15,13 @@ public class LandingPage extends BasePage {
     }
 
     //WebElements
-    By modalWindow = By.className("modal-body");
-    By modalCitySelector = By.className("css-1s2u09g-control");
-    By modalAreaSelector = By.className("");
+    By modalWindow = By.className("modal-content");
+    By modalCitySelector = By.xpath("//*[contains(text(), 'Select City')]");
+    By modalAreaSelector = By.xpath("//*[contains(text(), 'Select Area')]");
     By modalConfirmButton = By.xpath("//button[normalize-space()='Confirm']");
+    By modalTitle = By.xpath("//h4[@class='text-center']");
+
+
 
     By userNameOnLandingPage = By.cssSelector("div[class='b2c_user_profile'] div h4");
 
@@ -32,6 +36,19 @@ public class LandingPage extends BasePage {
         goToUrl(PropertyReader.readItem("url"));
     }
     public void setDeliveryLocation(){
+        waitForElementToAppear(modalWindow);
+        waitForElementToAppear(modalCitySelector);
+        waitForElementToAppear(modalAreaSelector);
+
+       click(modalCitySelector);
+       Actions keyDown = new Actions(driver);
+       keyDown.sendKeys(Keys.chord(Keys.DOWN, Keys.DOWN)).perform();
+
+
+       // System.out.println(driver.findElement(modalWindow).getText());
+        System.out.println(driver.findElement(modalCitySelector).getText());
+        System.out.println(driver.findElement(modalCitySelector).getText());
+        System.out.println(driver.findElement(modalAreaSelector).getText());
 
     }
 }

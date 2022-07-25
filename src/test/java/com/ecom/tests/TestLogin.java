@@ -12,9 +12,9 @@ import org.testng.annotations.Test;
 
 public class TestLogin extends TestBase {
 
-    @Severity(SeverityLevel.CRITICAL)
-    @Description("Test for true vs True")
-    @Test
+//    @Severity(SeverityLevel.CRITICAL)
+//    @Description("Test for true vs True")
+//    @Test
     public void loginToBM(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.OpenLoginPage();
@@ -22,9 +22,9 @@ public class TestLogin extends TestBase {
         takeScreenshot("Login to BM");
     }
 
-    @Severity(SeverityLevel.CRITICAL)
-    @Description("Verify logged in user")
-    @Test
+//    @Severity(SeverityLevel.CRITICAL)
+//    @Description("Verify logged in user")
+//    @Test
     public void verifyLoggedInUser(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.OpenLoginPage();

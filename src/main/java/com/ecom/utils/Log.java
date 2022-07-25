@@ -45,18 +45,22 @@ public class Log {
 
     //log level methods
     public static void info(String message) {
+
         Log.info(message);
     }
 
     public static void warn(String message) {
+
         Log.warn(message);
     }
 
     public static void error(String message, Exception e) {
+
         Log.error(message,e);
     }
 
     public static void fatal(String message) {
+
         Log.fatal(message);
     }
 }
