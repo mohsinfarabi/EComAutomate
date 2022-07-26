@@ -3,8 +3,6 @@ package com.ecom.pages;
 import com.ecom.base.BasePage;
 import com.ecom.utils.PropertyReader;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 
 public class LandingPage extends BasePage {
     WebDriver driver;
@@ -16,8 +14,9 @@ public class LandingPage extends BasePage {
 
     //WebElements
     By modalWindow = By.className("modal-content");
-    By modalCitySelector = By.xpath("//*[contains(text(), 'Select City')]");
-    By modalAreaSelector = By.xpath("//*[contains(text(), 'Select Area')]");
+//    By modalCitySelector = By.xpath("//*[contains(text(), 'Select City')]");
+    By modalCitySelector = By.xpath("//div[@id='react-select-2-placeholder']");
+    By modalAreaSelector = By.xpath("//div[@id='react-select-3-placeholder']");
     By modalConfirmButton = By.xpath("//button[normalize-space()='Confirm']");
     By modalTitle = By.xpath("//h4[@class='text-center']");
 
@@ -40,14 +39,15 @@ public class LandingPage extends BasePage {
         waitForElementToAppear(modalCitySelector);
         waitForElementToAppear(modalAreaSelector);
 
-       click(modalCitySelector);
-       Actions keyDown = new Actions(driver);
-       keyDown.sendKeys(Keys.chord(Keys.DOWN, Keys.DOWN)).perform();
+
+        //click(modalCitySelector);
+//       Actions keyDown = new Actions(driver);
+//       keyDown.sendKeys(Keys.chord(Keys.DOWN, Keys.DOWN)).perform();
 
 
        // System.out.println(driver.findElement(modalWindow).getText());
         System.out.println(driver.findElement(modalCitySelector).getText());
-        System.out.println(driver.findElement(modalCitySelector).getText());
+        //System.out.println(driver.findElement(modalCitySelector).getText());
         System.out.println(driver.findElement(modalAreaSelector).getText());
 
     }

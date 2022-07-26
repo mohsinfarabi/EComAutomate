@@ -1,0 +1,1 @@
+{"uuid":"a75b678e-b0dd-44e3-97a5-c5cbfe9da83c","name":"com.ecom.base.TestBase.setup","children":["9710a7b2-3fca-45a8-81ca-1b5ed9a986df"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1658834633069,"stop":1658834638578}],"afters":[],"start":1658834633069,"stop":1658834638578}
